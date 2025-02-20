@@ -5,6 +5,7 @@
     <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
+        
         const showProducts=()=>{
         const products=[
           {id:1,name:"p1",price:25},
@@ -21,13 +22,17 @@
         })
         divProducts.innerHTML=str;
     };
+    const cart={};
+    const addtoCart=(id)=>{
+        cart[id]=1;
+        console.log(cart);
+    }
+    
        </script>
 </head>
 <body onload="showProducts()">
   <h1>My Store</h1>
   <hr>
-  <div id="divProducts">
-
-  </div>
+  <div id="divProducts"></div>
 </body>
 </html>
